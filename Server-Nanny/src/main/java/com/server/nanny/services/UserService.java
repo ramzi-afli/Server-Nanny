@@ -1,31 +1,12 @@
 package com.server.nanny.services;
 
-
+import com.server.nanny.exceptions.UserAlreadyException;
+import com.server.nanny.exceptions.UserNotFoundException;
 import com.server.nanny.models.User;
-import com.server.nanny.repository.UserRepository;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+public interface UserService {
 
-@ApplicationScoped
-
-public class UserService {
-
-    @Inject
-    private UserRepository userRepository;
-    Integer  counter=1 ;
-    public User createUser(User user){
-
-
-        user.setId(this.counter);
-        this.counter ++ ;
-         return  userRepository.save(user) ;
-    }
-
-public User  findUserById(Integer id ){
-
-        return  userRepository.findById(id).get() ;
-}
-
+    User createUser(User user) throws UserAlreadyException;
+    User  findUserById(Integer id) throws UserNotFoundException ;
 
 }

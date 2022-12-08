@@ -2,7 +2,7 @@ package com.server.nanny.boundaries;
 
 
 import com.server.nanny.models.User;
-import com.server.nanny.services.UserService;
+import com.server.nanny.services.UserServiceImpl;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -18,7 +18,7 @@ public class UserController  {
 
 
     @Inject
-    private UserService userService ;
+    private UserServiceImpl userService ;
 
 
     @POST

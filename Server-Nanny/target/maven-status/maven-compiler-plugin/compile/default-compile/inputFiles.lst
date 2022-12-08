@@ -4,5 +4,9 @@ C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\na
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\repository\DocumentManagerProducer.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\User.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\repository\UserRepository.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\Rack.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\Sensor.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\SensorType.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\JAXRSConfiguration.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\boundaries\UserController.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\Room.java
