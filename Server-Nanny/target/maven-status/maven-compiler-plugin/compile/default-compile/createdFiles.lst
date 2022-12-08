@@ -1,12 +1,8 @@
-com\server\nanny\models\ObjectIdConverter.class
-com\server\nanny\repository\PersonRepository.class
-com\server\nanny\JAXRSConfiguration.class
-com\server\nanny\util\FieldPropertyVisibilityStrategy.class
-com\server\nanny\controller\UserController.class
-com\server\nanny\models\Person.class
 com\server\nanny\repository\DocumentManagerProducer.class
 com\server\nanny\models\User.class
 com\server\nanny\models\Role.class
+com\server\nanny\JAXRSConfiguration.class
+com\server\nanny\util\FieldPropertyVisibilityStrategy.class
 com\server\nanny\services\UserService.class
 com\server\nanny\repository\UserRepository.class
-com\server\nanny\controller\PersonResource.class
+com\server\nanny\boundaries\UserController.class
