@@ -1,6 +1,7 @@
 package com.server.nanny.models;
 
 
+import com.server.nanny.util.Argon2Utility;
 import com.server.nanny.util.FieldPropertyVisibilityStrategy;
 import jakarta.nosql.mapping.Column;
 import jakarta.nosql.mapping.Convert;
@@ -14,6 +15,7 @@ import javax.persistence.GenerationType;
 
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @JsonbVisibility(FieldPropertyVisibilityStrategy.class)
@@ -35,7 +37,7 @@ public class User   implements Serializable {
 
 
     @Column("role")
-    private  Role  role ;
+    private Set<Role> roles ;
 
 
     /**
@@ -60,17 +62,33 @@ public class User   implements Serializable {
     }
 
 
-    public   Role getRole(){
-        return  role;
-    }
+
 
     public int getId() {
         return id;
     }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+
+    public User(String surname, String forname, String email, String password, Set<Role> roles) {
+        this.surname = surname;
+        this.forname = forname;
+        this.email = email;
+        this.password = password;
+        this.roles = roles;
+    }
+
     /**
      *
      * ALl Setters
      */
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
 
     public void setSurname(String surname){
         this.surname=surname ;
@@ -86,9 +104,7 @@ public class User   implements Serializable {
     public   void setPassword(String password){
         this.password=password ;
     }
-    public   void setRole(Role role){
-        this.role=role   ;
-    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -97,14 +113,7 @@ public class User   implements Serializable {
      * All Args  constructor  and No Args  constructor
       */
 
-    public  User(String surname , String forname  , String email , String password , Role role) {
-         this.surname=surname ;
-         this.forname=forname ;
-         this.email=email;
-         this.password=password ;
-         this.role=role ;
 
-    }
 
     public  User(){
 
@@ -133,7 +142,15 @@ public class User   implements Serializable {
                 ", forname='" + forname + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", role=" + role +
+                ", role=" + roles +
                 '}';
     }
+
+    public void updatePassword(String password, Argon2Utility argon2Utility) {
+        this.password = argon2Utility.hash(password.toCharArray());
+    }
+
+
+
+
 }

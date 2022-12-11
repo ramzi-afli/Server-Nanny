@@ -9,6 +9,9 @@
         <module name="nanny" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nanny" target="10" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

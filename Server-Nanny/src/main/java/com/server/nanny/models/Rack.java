@@ -1,11 +1,12 @@
 package com.server.nanny.models;
 
 
+import javax.json.bind.annotation.JsonbVisibility;
+
 import com.server.nanny.util.FieldPropertyVisibilityStrategy;
 import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;
 
-import javax.json.bind.annotation.JsonbVisibility;
 import java.util.Objects;
 
 @Entity
