@@ -1,27 +1,33 @@
 package com.server.nanny.security;
 
 
+import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import com.server.nanny.models.Role;
 import com.server.nanny.models.User;
-import com.auth0.jwt.algorithms.Algorithm;
+import org.eclipse.microprofile.config.Config;
+import org.eclipse.microprofile.config.ConfigProvider;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import com.auth0.jwt.JWT;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-class UserJWT {
+public class UserJWT {
 
     private static final Logger LOGGER = Logger.getLogger(UserJWT.class.getName());
-    private static final String ISSUER = "jakarta";
-    private static final String ROLES = "roles";
+
+    private static final Config config = ConfigProvider.getConfig();
+    private static final String ISSUER = config.getValue("jwt.issuer",String.class);
+
+    private static final String ROLES = config.getValue("jwt.claim.roles",String.class);
 
     private final String user;
 
@@ -46,16 +52,21 @@ class UserJWT {
     static String createToken(User user, Token token, Duration duration) {
         final LocalDateTime expire = LocalDateTime.now(ZoneOffset.UTC).plusMinutes(duration.toMinutes());
         Algorithm algorithm = Algorithm.HMAC256(token.get());
+         List roles =new ArrayList<>() ;
+         user.getRoles().forEach(role -> {
+             roles.add(role.toString());
+         });
+
         return JWT.create()
                 .withJWTId(user.getEmail())
                 .withIssuer(ISSUER)
                 .withExpiresAt(Date.from(expire.atZone(ZoneOffset.UTC).toInstant()))
-                .withClaim(ROLES, new ArrayList<>(user.getRoles()))
+                .withClaim(ROLES, roles)
                 .sign(algorithm);
 
     }
 
-    static Optional<UserJWT> parse(String jwtText, String token) {
+    public static Optional<UserJWT> parse(String jwtText, String token) {
         Algorithm algorithm = Algorithm.HMAC256(token);
         try {
             JWTVerifier verifier = JWT.require(algorithm).withIssuer(ISSUER).build();

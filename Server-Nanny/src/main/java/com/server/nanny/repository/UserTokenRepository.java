@@ -7,7 +7,8 @@ import jakarta.nosql.mapping.Repository;
 
 import java.util.Optional;
 
-public interface UserTokenRepository extends Repository<UserTokenRepository,String> {
+public interface UserTokenRepository extends Repository<UserToken,String> {
+
 
     Optional<UserToken> findByEmail(String  email ) ;
     @Query("select * from UserToken where tokens.token = @refreshToken")

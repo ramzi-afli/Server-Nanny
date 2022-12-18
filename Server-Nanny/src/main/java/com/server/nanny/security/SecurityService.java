@@ -43,20 +43,20 @@ public class SecurityService {
     }
 
 
-     public    void delete(int id ) {
-            userRepository.deleteById(id);
+     public    void delete(String email ) {
+            userRepository.deleteById(email);
 
         }
 
 
 
-   public void updatePassword(int id, User dto) {
+   public void updatePassword(String email, User dto) {
         final Principal principal = securityContext.getCallerPrincipal();
-        if (isForbidden(id, securityContext, principal)) {
+        if (isForbidden(email, securityContext, principal)) {
             throw new UserForbiddenException();
         }
-        final User user = userRepository.findById(id)
-                .orElseThrow(() -> new UserNotFoundException("$id"));
+        final User user = userRepository.findById(email)
+                .orElseThrow(() -> new UserNotFoundException(email));
         user.updatePassword(dto.getPassword(), argon2Utility);
         userRepository.save(user);
 
@@ -64,15 +64,15 @@ public class SecurityService {
 
     /**
      * @apiNote  used to roles  to user
-     * @param id  : user  id
+     * @param email  : user  email
      * @param role : role to  add
      *
      */
-    public void addRole(int id, Role role
+    public void addRole(String email, Role role
     ) {
 
-        final User user = userRepository.findById(id)
-                .orElseThrow(() -> new UserNotFoundException("$id"));
+        final User user = userRepository.findById(email)
+                .orElseThrow(() -> new UserNotFoundException(email));
 
         Set<Role> roles=user.getRoles() ;
         roles.add(role) ;
@@ -83,14 +83,14 @@ public class SecurityService {
 
     /**
      * @apiNote  used to delete  roles to user
-     * @param id
+     * @param email
      * @param role
      */
 
-    public void removeRole(int id, Role role) {
-        final User user = userRepository.findById(id)
+    public void removeRole(String  email , Role role) {
+        final User user = userRepository.findById(email)
 
-                .orElseThrow(() -> new UserNotFoundException("$id"));
+                .orElseThrow(() -> new UserNotFoundException(email));
 
         Set<Role> roles=user.getRoles() ;
         roles.remove(role) ;
@@ -104,7 +104,7 @@ public class SecurityService {
         if (principal == null) {
             throw new UserNotAuthorizedException();
         }
-        final User user = userRepository.findById(Integer.valueOf(principal.getName()))
+        final User user = userRepository.findById(principal.getName())
                 .orElseThrow(() -> new UserNotFoundException(principal.getName()));
         return user;
     }
@@ -116,13 +116,13 @@ public class SecurityService {
 
     /**
      *
-     * @param id
+     * @param email
      * @param context
      * @param principal
      * @return
      */
 
-    private boolean isForbidden(int id, SecurityContext context, Principal principal) {
+    private boolean isForbidden(String  email, SecurityContext context, Principal principal) {
         return !(context.isCallerInRole(Role.ADMIN.name()));
 
     }
@@ -137,10 +137,11 @@ public class SecurityService {
 
 
     public User findBy(String email, String password) {
-        System.out.println("--------------------in findby---------------security service");
-        final User user = userRepository.findByEmail(email)
+        System.out.println("------------------------------------------------");
+        System.out.println(userRepository.findById(email).toString());
+        final User user = userRepository.findById(email)
                 .orElseThrow(() -> new UserNotAuthorizedException());
-        System.out.println(user.toString() +"\n");
+        System.out.println(argon2Utility.check(user.getPassword() ,password.toCharArray()));
         if (argon2Utility.check(user.getPassword() ,password.toCharArray() )) {
 
             return user;

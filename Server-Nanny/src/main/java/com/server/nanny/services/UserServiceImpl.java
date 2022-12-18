@@ -1,8 +1,10 @@
 package com.server.nanny.services;
 
 
+import com.server.nanny.exceptions.UserAlreadyExistsException;
 import com.server.nanny.models.User;
 import com.server.nanny.repository.UserRepository;
+import com.server.nanny.util.Argon2Utility;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -12,18 +14,18 @@ public class UserServiceImpl  implements  UserService{
 
     @Inject
     private UserRepository userRepository;
-    Integer  counter=1 ;
+    @Inject
+    Argon2Utility argon2Utility ;
     public User createUser(User user){
-
-
-        user.setId(this.counter);
-        this.counter ++ ;
+        if(userRepository.findById(user.getEmail()).isPresent()){
+            throw  new UserAlreadyExistsException(user.getEmail()+" is already exists") ;
+        }
+          user.updatePassword(user.getPassword(),argon2Utility);
          return  userRepository.save(user) ;
     }
 
-public User  findUserById(Integer id ){
-
-        return  userRepository.findById(id).get() ;
+public User  findUserById(String email ){
+        return  userRepository.findById(email).get() ;
 }
 
 

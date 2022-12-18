@@ -10,37 +10,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ade42d2-f785-4a04-b31c-0794ba203bfe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14a394ade692a1eb063c53f587796549cd9a7f17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1713b65f1eb1e2ad1e765f3eaa53d049e6115bd3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1762e0624e1ec793b78b485643336542a0c8002f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c5b9fe0e102ad9e138b990116d1a2ad2142ef27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b7cd63096a1e088cdbcdbe178177e976a1936b6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37f39013c8e074c1c1924d690948a7bdf73c6e1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d62556faa8a450753eb8ec38ce56363a2cbfd80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f0d57990b66d9ae46b547d69781c7aa97c30880" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57ef1f40a9e3afa992e3975eef1715a5c9c6d3c3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/771b186337f24378ee8f6b1581d3163693b442cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c1a27401c7e931f5d7c78fae1db8484b7a71628" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ebd0462b430acc8f0ffa5b306c22624083e78f4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b968e38003796cb53d790eda183f9440e1f6d19f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1779064c2fdd615d9a84b1948401394625df255" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e61dfa0d28ea018fbceafa4bd24a6a1ea6daced3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/nanny_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/nanny_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nanny.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nanny.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/exceptions/UserAlreadyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/exceptions/UserAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Rack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/RoomRessources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/SecurityResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/SecurityResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/repository/UserTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/repository/UserTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/GrantType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/GrantType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/Oauth2Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/Oauth2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/Oauth2Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserJWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/RoomServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/RoomServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/classes/META-INF/microprofile-config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/glassfish-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -64,21 +95,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/pc/Desktop/kaanich-cot-project/Server-Nanny",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Desktop/Kaanich-project/aim_wot_tutorial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JBoss/WildFly 26.1.2.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.2.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-17.0.5" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/nanny-1.0/" />
@@ -152,19 +184,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="nanny" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="nanny" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,7 +195,15 @@
       <updated>1670762587587</updated>
       <workItem from="1670762590361" duration="467000" />
       <workItem from="1670763084831" duration="101000" />
-      <workItem from="1670763204234" duration="9364000" />
+      <workItem from="1670763204234" duration="11911000" />
+      <workItem from="1670833187380" duration="81000" />
+      <workItem from="1670837835306" duration="2415000" />
+      <workItem from="1670852230377" duration="132000" />
+      <workItem from="1670852471566" duration="133000" />
+      <workItem from="1671229017358" duration="931000" />
+      <workItem from="1671279384201" duration="6428000" />
+      <workItem from="1671305306954" duration="9255000" />
+      <workItem from="1671341893647" duration="7477000" />
     </task>
     <servers />
   </component>
@@ -193,16 +220,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/server/nanny/security/Oauth2Resource.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

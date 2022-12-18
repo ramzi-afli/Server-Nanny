@@ -3,7 +3,7 @@ package com.server.nanny.security;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-enum GrantType implements Supplier<String> {
+public  enum GrantType implements Supplier<String> {
 
     PASSWORD("password"),
     REFRESH_TOKEN("refresh_token");

@@ -18,11 +18,10 @@
           <element id="library" level="project" name="Maven: de.mkammerer:argon2-jvm:2.11" />
           <element id="library" level="project" name="Maven: de.mkammerer:argon2-jvm-nolibs:2.11" />
           <element id="library" level="project" name="Maven: net.java.dev.jna:jna:5.8.0" />
-          <element id="library" level="project" name="Maven: com.auth0:java-jwt:3.10.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.3" />
-          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.14" />
+          <element id="library" level="project" name="Maven: com.auth0:java-jwt:4.2.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.4.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.4" />
           <element id="library" level="project" name="Maven: com.nimbusds:nimbus-jose-jwt:9.21.1" />
           <element id="library" level="project" name="Maven: com.github.stephenc.jcip:jcip-annotations:1.0-1" />
           <element id="library" level="project" name="Maven: org.eclipse.jnosql.artemis:artemis-document:1.0.0-b2" />

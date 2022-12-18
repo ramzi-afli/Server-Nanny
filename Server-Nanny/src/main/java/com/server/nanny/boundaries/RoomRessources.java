@@ -1,7 +1,6 @@
 package com.server.nanny.boundaries;
 
 
-import com.server.nanny.models.Rack;
 import com.server.nanny.models.Room;
 import com.server.nanny.services.RoomServiceImp;
 
@@ -15,7 +14,7 @@ import javax.ws.rs.core.Response;
 @Path("room")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class RoomController {
+public class RoomRessources {
 
     @Inject
     private RoomServiceImp roomServiceImp ;

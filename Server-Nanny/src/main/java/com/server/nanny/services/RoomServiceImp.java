@@ -12,11 +12,9 @@ public class RoomServiceImp {
     @Inject
     private RoomRepository roomRepository ;
 
-    Integer  counter=1 ;
+
     public Room createRoom( Room room){
-        room.setId(counter);
         System.out.println(room.getRacks());
-        counter ++  ;
         return  roomRepository.save(room);
 
     }

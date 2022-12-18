@@ -1,6 +1,7 @@
 package com.server.nanny.boundaries;
 
 
+import com.server.nanny.exceptions.UserAlreadyExistsException;
 import com.server.nanny.models.User;
 import com.server.nanny.services.UserServiceImpl;
 
@@ -23,13 +24,18 @@ public class UserController  {
 
     @POST
     public Response createUser(User user){
-        return Response.ok(userService.createUser(user).toString()).build() ;
+         try {
+             return Response.ok(userService.createUser(user).toString()).build() ;
+         } catch (UserAlreadyExistsException  e){
+             return  Response.status(400, e.getMessage()).build();
+         }
+
     }
 
     @GET
-    @Path("{id}")
-    public Response getUserById(@PathParam("id") Integer id){
-        return Response.ok(userService.findUserById(id)).build() ;
+    @Path("{email}")
+    public Response getUserById(@PathParam("email") String email){
+        return Response.ok(userService.findUserById(email)).build() ;
     }
 
 }

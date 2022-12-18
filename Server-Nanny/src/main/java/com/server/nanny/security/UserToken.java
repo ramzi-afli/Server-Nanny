@@ -17,14 +17,13 @@ public class UserToken {
 
     @Id
     private String email;
-
     @Column
     private Set<RefreshToken> tokens;
 
     UserToken(String email) {
         this.email = email;
     }
-UserToken(String email ,  Set<RefreshToken> tokens) {
+    UserToken(String email ,  Set<RefreshToken> tokens) {
         this.email=email ;
         this.tokens=tokens ;
 }
@@ -49,22 +48,23 @@ UserToken(String email ,  Set<RefreshToken> tokens) {
         this.tokens.add(refreshToken);
     }
 
-    RefreshToken update(AccessToken accessToken, String refreshTokenText, UserTokenRepository userTokenRepository) {
+
+    RefreshToken update(AccessToken accessToken, String refreshTokenText, UserTokenRepository repository) {
         initiateTokens();
         this.tokens.removeIf(r -> refreshTokenText.equals(r.getToken()));
         RefreshToken refreshToken = new RefreshToken(Token.generate(), accessToken);
         this.tokens.add(refreshToken);
-        UserToken userToken =new UserToken() ;
-        userTokenRepository.save();
+        repository.save(this);
         return refreshToken;
     }
+
 
     void remove(String token) {
         initiateTokens();
         this.tokens.removeIf(r -> token.equals(r.getToken()));
     }
 
-    Optional<AccessToken> findAccessToken(String accessToken) {
+    public Optional<AccessToken> findAccessToken(String accessToken) {
         initiateTokens();
         return this.tokens.stream().map(RefreshToken::getAccessToken)
                 .filter(a -> a.getToken().equals(accessToken))

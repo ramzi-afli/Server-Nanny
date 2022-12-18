@@ -9,11 +9,13 @@ C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\na
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\RefreshToken.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\GrantType.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\util\Argon2Utility.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\boundaries\Oauth2Resource.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\repository\RoomRepository.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\filters\Oauth2Authentication.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\User.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\util\BeanValConstrainViolationExceptionMapper.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\dtos\UserDto.java
-C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\Oauth2Resource.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\filters\Secured.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\Oauth2Request.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\boundaries\SecurityResource.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\exceptions\UserNotAuthorizedExceptionMapper.java
@@ -26,6 +28,7 @@ C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\na
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\UserJWT.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\util\MongoDBIdentity.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\Oauth2Service.java
+C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\boundaries\RoomRessources.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\services\RoomServiceImp.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\SecurityService.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\repository\DocumentManagerProducer.java
@@ -33,7 +36,6 @@ C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\na
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\AccessToken.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\repository\UserTokenRepository.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\exceptions\UserForbiddenException.java
-C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\boundaries\RoomController.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\Sensor.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\models\SensorType.java
 C:\Users\pc\Desktop\kaanich-cot-project\Server-Nanny\src\main\java\com\server\nanny\security\Token.java

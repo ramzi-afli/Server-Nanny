@@ -1,6 +1,9 @@
 package com.server.nanny.security;
 
 
+import org.eclipse.microprofile.config.Config;
+import org.eclipse.microprofile.config.ConfigProvider;
+
 import javax.json.bind.annotation.JsonbCreator;
 import javax.json.bind.annotation.JsonbProperty;
 import java.util.Objects;
@@ -9,9 +12,10 @@ import java.util.function.Supplier;
 
 public final class Token implements Supplier<String> {
 
-    private static final int LEFT_LIMIT = 48;
-    private static final int RIGHT_LIMIT = 122;
-    static final int SIZE = 32;
+    private static final Config config = ConfigProvider.getConfig();
+    private static final int LEFT_LIMIT = config.getValue("token.left.limit",Integer.class);
+    private static final int RIGHT_LIMIT = config.getValue("token.right.limit", Integer.class);
+    static final int SIZE = config.getValue("token.size",Integer.class);
 
     @JsonbProperty("token")
     private final String token;

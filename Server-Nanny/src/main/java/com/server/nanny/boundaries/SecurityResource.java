@@ -32,34 +32,34 @@ public class SecurityResource {
     }
 
     @DELETE
-    @Path("{id}")
+    @Path("{email}")
     @RolesAllowed("ADMIN")
-    public void delete(@PathParam("id") int id) {
-        securityService.delete(id);
+    public void delete(@PathParam("email") String email) {
+        securityService.delete(email);
 
     }
 
-    @Path("{id}")
+    @Path("{email}")
     @PUT
-    public void changePassword(@PathParam("id") int id, @Valid User user) {
-        securityService.updatePassword(id, user);
+    public void changePassword(@PathParam("email") String email, @Valid User user) {
+        securityService.updatePassword(email, user);
 
     }
 
-    @Path("roles/{id}")
+    @Path("roles/{email}")
     @PUT
     @RolesAllowed("ADMIN")
-    public void addRole(@PathParam("id") int id, Role role){
-        securityService.addRole(id, role);
+    public void addRole(@PathParam("email") String email, Role role){
+        securityService.addRole(email, role);
 
     }
-    @Path("roles/{id}")
+    @Path("roles/{email}")
     @DELETE
     @RolesAllowed("ADMIN")
 
-    public void removeRole(@PathParam("id") int id, Role role){
+    public void removeRole(@PathParam("email") String email, Role role){
 
-        securityService.removeRole(id, role);
+        securityService.removeRole(email, role);
 
     }
 
@@ -75,7 +75,6 @@ public class SecurityResource {
     @Path("users")
     @GET
     @RolesAllowed("ADMIN")
-
     public List<User> getUsers() {
         return securityService.getUsers();
 

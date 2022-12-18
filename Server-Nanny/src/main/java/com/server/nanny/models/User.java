@@ -22,14 +22,13 @@ import java.util.Set;
 public class User   implements Serializable {
 
     @Id
-    private  int  id ;
+    @Column("email")
+    private  String email ;
     @Column( "sur-name")
     private  String surname ;
     @Column( "for-name")
 
     private  String forname ;
-    @Column("email")
-    private  String email ;
 
 
     @Column("password" )
@@ -64,9 +63,6 @@ public class User   implements Serializable {
 
 
 
-    public int getId() {
-        return id;
-    }
 
     public Set<Role> getRoles() {
         return roles;
@@ -105,9 +101,6 @@ public class User   implements Serializable {
         this.password=password ;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     /**
      * All Args  constructor  and No Args  constructor
@@ -137,7 +130,6 @@ public class User   implements Serializable {
     @Override
     public String toString() {
         return "{" +
-                "id=" + id +
                 ", surname='" + surname + '\'' +
                 ", forname='" + forname + '\'' +
                 ", email='" + email + '\'' +
