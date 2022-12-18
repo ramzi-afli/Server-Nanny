@@ -9,6 +9,7 @@ import java.sql.DataTruncation;
 public interface UserService {
 
     User createUser(User user) throws UserAlreadyExistsException;
-    User  findUserById(String email) throws UserNotFoundException ;
+    User addUser(User user) throws  UserAlreadyExistsException  ;
+    void delete(String email) throws  UserNotFoundException ;
 
 }

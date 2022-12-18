@@ -11,15 +11,7 @@ import java.util.Objects;
 import java.util.Set;
 
 
-/**
- *room{
- *    id:1  ,
- *    racks : [
- *    rack 1 , Rack2 ,etc ..
- *    ]
- *}
- *
- */
+
 
 @Entity
 @JsonbVisibility(FieldPropertyVisibilityStrategy.class)

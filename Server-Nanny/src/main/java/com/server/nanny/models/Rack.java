@@ -6,12 +6,13 @@ import javax.json.bind.annotation.JsonbVisibility;
 import com.server.nanny.util.FieldPropertyVisibilityStrategy;
 import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;
-
 import java.util.Objects;
+
 
 @Entity
 @JsonbVisibility(FieldPropertyVisibilityStrategy.class)
 public class Rack {
+
     @Id
     private  Integer id ;
 

@@ -15,7 +15,7 @@ import javax.ws.rs.core.MediaType;
 
 @ApplicationScoped
 @Path("oauth2")
-public class Oauth2Resource {
+public class Oauth2Resources {
 
     @Inject
     private Oauth2Service service;
@@ -28,7 +28,6 @@ public class Oauth2Resource {
         switch (request.getGrandType()) {
 
             case PASSWORD:
-                System.out.println("it is passed  from here");
                 return service.token(request);
             case REFRESH_TOKEN:
                 return service.refreshToken(request);
