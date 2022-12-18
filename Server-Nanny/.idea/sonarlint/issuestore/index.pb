@@ -1,6 +1,4 @@
 
-m
-=src/main/java/com/server/nanny/boundaries/RoomController.java,e\6\e61dfa0d28ea018fbceafa4bd24a6a1ea6daced3
 x
 Hsrc/main/java/com/server/nanny/util/FieldPropertyVisibilityStrategy.java,b\9\b968e38003796cb53d790eda183f9440e1f6d19f
 f
@@ -23,3 +21,17 @@ _
 /src/main/java/com/server/nanny/models/User.java,7\7\771b186337f24378ee8f6b1581d3163693b442cc
 v
 Fsrc/main/java/com/server/nanny/repository/DocumentManagerProducer.java,9\e\9ebd0462b430acc8f0ffa5b306c22624083e78f4
+`
+0src/main/java/com/server/nanny/dtos/UserDto.java,3\d\3d62556faa8a450753eb8ec38ce56363a2cbfd80
+h
+8src/main/java/com/server/nanny/services/UserService.java,f\f\ff68be94e7ea18c1f17676af6a5be87fb4286dc3
+l
+<src/main/java/com/server/nanny/services/UserServiceImpl.java,5\4\54453ea17ffe77f2fb719b7807c2464d0eb1c138
+k
+;src/main/java/com/server/nanny/services/RoomServiceImp.java,2\b\2b7cd63096a1e088cdbcdbe178177e976a1936b6
+_
+/src/main/java/com/server/nanny/models/Role.java,0\f\0f723a3eddf3ddcdbfc675386b8d9bba3c72f0a1
+j
+:src/main/java/com/server/nanny/security/Oauth2Request.java,f\0\f09734624a0e9667c4270e0e65f18f4411dda1e1
+k
+;src/main/java/com/server/nanny/security/Oauth2Response.java,a\4\a42ced131912546b5de9cb3ab8bb2fff4d2c752c

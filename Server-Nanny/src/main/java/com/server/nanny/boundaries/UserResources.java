@@ -3,6 +3,7 @@ package com.server.nanny.boundaries;
 
 import com.server.nanny.exceptions.UserAlreadyExistsException;
 import com.server.nanny.exceptions.UserNotFoundException;
+import com.server.nanny.filters.Secured;
 import com.server.nanny.models.User;
 import com.server.nanny.services.UserServiceImpl;
 
@@ -15,7 +16,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @ApplicationScoped
-@Path("user")
+@Path("")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class UserResources {
@@ -33,6 +34,7 @@ public class UserResources {
      */
 
     @POST
+    @Path("/signup")
     public Response createUser(@Valid User user){
          try {
              return Response.ok(userService.createUser(user)).build() ;
@@ -51,7 +53,8 @@ public class UserResources {
      */
 
     @POST()
-    @Path("/add")
+    @Path("user/add")
+    @Secured
     @RolesAllowed("ADMIN")
     public  Response addUser( @Valid User user){
         try {
@@ -71,8 +74,9 @@ public class UserResources {
      * @return status
      * @apiNote  this  methode is used by the Admin to delete users
      */
+
     @DELETE()
-    @Path("/{email}")
+    @Path("user/{email}")
     @RolesAllowed("ADMIN")
     public  Response deleteUser(@PathParam("email") String email){
         try {

@@ -6,6 +6,7 @@ import com.server.nanny.security.Oauth2Response;
 import com.server.nanny.security.Oauth2Service;
 
 
+import javax.annotation.security.PermitAll;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.validation.Valid;
@@ -20,10 +21,12 @@ public class Oauth2Resources {
     @Inject
     private Oauth2Service service;
 
+
     @POST
     @Path("token")
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.APPLICATION_JSON)
+
     public Oauth2Response token(@BeanParam @Valid Oauth2Request request) {
         switch (request.getGrandType()) {
 

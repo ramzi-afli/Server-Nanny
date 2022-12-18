@@ -68,9 +68,11 @@ public class UserJWT {
 
     public static Optional<UserJWT> parse(String jwtText, String token) {
         Algorithm algorithm = Algorithm.HMAC256(token);
+
         try {
+
             JWTVerifier verifier = JWT.require(algorithm).withIssuer(ISSUER).build();
-            final DecodedJWT jwt = verifier.verify(jwtText);
+            var jwt =JWT.decode(token);
             final Claim roles = jwt.getClaim(ROLES);
             return Optional.of(new UserJWT(jwt.getId(),
                     roles.asList(String.class).stream().collect(Collectors.toUnmodifiableSet())));

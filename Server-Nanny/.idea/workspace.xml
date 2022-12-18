@@ -10,17 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ade42d2-f785-4a04-b31c-0794ba203bfe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b7cd63096a1e088cdbcdbe178177e976a1936b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d62556faa8a450753eb8ec38ce56363a2cbfd80" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e61dfa0d28ea018fbceafa4bd24a6a1ea6daced3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Rack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/RoomRessources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/SecurityResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/Oauth2Authentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserJWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/classes/META-INF/microprofile-config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +73,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -166,6 +172,8 @@
       <workItem from="1671279384201" duration="6428000" />
       <workItem from="1671305306954" duration="9255000" />
       <workItem from="1671341893647" duration="10716000" />
+      <workItem from="1671363505258" duration="8000000" />
+      <workItem from="1671388177298" duration="6014000" />
     </task>
     <servers />
   </component>
