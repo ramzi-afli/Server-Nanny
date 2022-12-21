@@ -1,9 +1,11 @@
 
+D
+java:S1948("'Make "rooms" transient or serializable.(”Ë¸–8›ªÆ·Ò0
 Q
-java:S2209"5Change this instance-reference to a static reference.(ª¾Êıÿÿÿÿ
-U
-java:S1128":Remove this unused import 'jakarta.nosql.mapping.Convert'.(ÓÇ¼•üÿÿÿÿ
-S
-java:S1128"=Remove this unused import 'javax.persistence.GeneratedValue'.(¤®À‚
-S
-java:S1128"=Remove this unused import 'javax.persistence.GenerationType'.(ı÷õ¡
+java:S2209–"5Change this instance-reference to a static reference.(ª¾Êıÿÿÿÿ
+\
+java:S1128":Remove this unused import 'jakarta.nosql.mapping.Convert'.(ÓÇ¼•üÿÿÿÿ8¹ØÂ·Ò0
+Z
+java:S1128"=Remove this unused import 'javax.persistence.GeneratedValue'.(¤®À‚8¹ØÂ·Ò0
+Z
+java:S1128"=Remove this unused import 'javax.persistence.GenerationType'.(ı÷õ¡8¹ØÂ·Ò0

@@ -1,0 +1,18 @@
+
+^
+java:S6355"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+P
+java:S1133 "5Do not forget to remove this deprecated code someday.(óýàÒþÿÿÿÿ
+C
+java:S1123 "(Add the missing @deprecated Javadoc tag.(óýàÒþÿÿÿÿ
+[
+java:S1128"9Remove this unused import 'com.server.nanny.models.User'.(›žöÒüÿÿÿÿ8Ò¬€´Ò0
+t
+java:S1128"RRemove this unused import 'com.server.nanny.util.FieldPropertyVisibilityStrategy'.(Á û¹úÿÿÿÿ8Ó¬€´Ò0
+g
+java:S1128
+"ERemove this unused import 'javax.json.bind.annotation.JsonbProperty'.(°—Ä¸þÿÿÿÿ8Ó¬€´Ò0
+i
+java:S1128"GRemove this unused import 'javax.json.bind.annotation.JsonbVisibility'.(¯ÕìÔÿÿÿÿÿ8Ô¬€´Ò0
+^
+java:S1128"<Remove this unused import 'javax.transaction.Transactional'.(ûÒçÑúÿÿÿÿ8Ô¬€´Ò0

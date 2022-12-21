@@ -2,6 +2,7 @@ package com.server.nanny.models;
 
 
 import com.server.nanny.util.FieldPropertyVisibilityStrategy;
+import jakarta.nosql.mapping.Column;
 import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;
 
@@ -17,25 +18,34 @@ import java.util.Set;
 @JsonbVisibility(FieldPropertyVisibilityStrategy.class)
 public class Room {
     @Id
-    private  Integer id ;
+    private  String id ;
 
-    private Set<Rack> racks ;
+    @Column("assigned_user")
+    private  String userEmail ;
 
-    public Set<Rack> getRacks() {
-        return racks;
+
+    public Room(String id, String userEmail) {
+        this.id = id;
+        this.userEmail = userEmail;
     }
-    public void setRacks(Set<Rack> racks) {
-        this.racks = racks;
+
+    public Room() {
     }
 
-
-
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
     @Override

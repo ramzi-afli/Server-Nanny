@@ -10,16 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ade42d2-f785-4a04-b31c-0794ba203bfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e61dfa0d28ea018fbceafa4bd24a6a1ea6daced3" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a94d4cf25f096637aa9c44543a5c4ee901d278" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14d6ff7a022b84087d46c0f75e2008dbeb56fa05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42f28db418c1a850f359708b888c64e1eaa7489e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d37a3f8dceb557a156d59b9e580bee314fc5cda" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/688b18906dcb6fa99bf4d09fbf39ab40b35ef767" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f9c41422c7869a4d157195323c5cc460b8a0e9b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74b36960940431dde4e3aa4d4412f265171b66fa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9cb071e8b304a90e047724bba1772e5bf2ab9f4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/nanny_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/nanny_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c5b9fe0e102ad9e138b990116d1a2ad2142ef27" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c5b9fe0e102ad9e138b990116d1a2ad2142ef27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b7cd63096a1e088cdbcdbe178177e976a1936b6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d62556faa8a450753eb8ec38ce56363a2cbfd80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54453ea17ffe77f2fb719b7807c2464d0eb1c138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/771b186337f24378ee8f6b1581d3163693b442cc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/771b186337f24378ee8f6b1581d3163693b442cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff68be94e7ea18c1f17676af6a5be87fb4286dc3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff68be94e7ea18c1f17676af6a5be87fb4286dc3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/Oauth2Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/RoomRessources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/SecurityResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nanny.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nanny.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/boundaries/UserResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/Oauth2Authentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserJWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/UserJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/dtos/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Rack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/SensorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/SensorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/repository/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/repository/RoomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/RoomServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/services/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
@@ -173,7 +197,12 @@
       <workItem from="1671305306954" duration="9255000" />
       <workItem from="1671341893647" duration="10716000" />
       <workItem from="1671363505258" duration="8000000" />
-      <workItem from="1671388177298" duration="6014000" />
+      <workItem from="1671388177298" duration="11345000" />
+      <workItem from="1671478027492" duration="10083000" />
+      <workItem from="1671537991384" duration="16199000" />
+      <workItem from="1671562563336" duration="5822000" />
+      <workItem from="1671570892100" duration="622000" />
+      <workItem from="1671628456290" duration="765000" />
     </task>
     <servers />
   </component>

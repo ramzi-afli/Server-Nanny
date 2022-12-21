@@ -1,0 +1,13 @@
+
+J
+java:S3740 "/Provide the parametrized type for this generic.(àé¯Áşÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(ş¥³ä
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(£Ê³š
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(‰ÁË
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(ñšÔ
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(ôöÿ×
+S	java:S106="9Replace this use of System.out or System.err by a logger.(Õ³Ëèúÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(ÇˆÆğ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(¤´§ñşÿÿÿÿ
+Q
+java:S1068 "6Remove this unused "NOT_SECURED_PREFIX" private field.(àé¯Áşÿÿÿÿ

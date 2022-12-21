@@ -27,9 +27,7 @@ public class User   implements Serializable {
     @Column( "sur-name")
     private  String surname ;
     @Column( "for-name")
-
     private  String forname ;
-
 
     @Column("password" )
     private String password ;
@@ -37,6 +35,10 @@ public class User   implements Serializable {
 
     @Column("role")
     private Set<Role> roles ;
+
+    @Column("rooms")
+    private  Set<Room> rooms ;
+
 
 
     /**
@@ -68,7 +70,13 @@ public class User   implements Serializable {
         return roles;
     }
 
+    public Set<Room> getRooms() {
+        return rooms;
+    }
 
+    public void setRooms(Set<Room> rooms) {
+        this.rooms = rooms;
+    }
     public User(String surname, String forname, String email, String password, Set<Role> roles) {
         this.surname = surname;
         this.forname = forname;

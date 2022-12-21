@@ -1,0 +1,45 @@
+
+
+java:S1192?"xDefine a constant instead of duplicating this literal "
+ --------------------------------------------------- 
+" 5 times.(À‚Ô¤
+‡
+java:S1192p"rDefine a constant instead of duplicating this literal "
+-----------------------------------------------
+" 3 times.(¤Ê.
+c
+java:S2095H"HUse try-with-resources or close this "MqttClient" in a "finally" clause.(ÅÎ× ÿÿÿÿÿ
+S
+java:S3655›"7Call "Optional#isPresent()" before accessing the value.(Èòì€ùÿÿÿÿ
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(üõÙŠüÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+N	java:S106]"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+S	java:S106^"9Replace this use of System.out or System.err by a logger.( ‚ùùÿÿÿÿ
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+N	java:S106o"9Replace this use of System.out or System.err by a logger.(•Á¯¢
+M	java:S106p"9Replace this use of System.out or System.err by a logger.(¤Ê.
+N	java:S106q"9Replace this use of System.out or System.err by a logger.(ëˆñ¤
+M	java:S106r"9Replace this use of System.out or System.err by a logger.(¤Ê.
+M	java:S106t"9Replace this use of System.out or System.err by a logger.(¤Ê.
+V	java:S125s"<This block of commented-out lines of code should be removed.(´İ•şÿÿÿÿ
+H
+java:S1135u"2Complete the task associated to this TODO comment.(ùîü
+N	java:S106w"9Replace this use of System.out or System.err by a logger.(ıÂ‚í
+M
+java:S3972"7Move this "if" to a new line or add the missing "else".(û­á£
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(ÿ£µÄıÿÿÿÿ
+N
+java:S3972†"7Move this "if" to a new line or add the missing "else".(âªß
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(šêÙ©ÿÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(¬ÍÜüÿÿÿÿ
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(¶åšøúÿÿÿÿ
+O	java:S106‹"9Replace this use of System.out or System.err by a logger.(Î‚¡
+U
+java:S2130”">Use "Double.parseDouble" for this string-to-double conversion.(Ï«§¦
+U
+java:S2130">Use "Double.parseDouble" for this string-to-double conversion.(Ï«§¦
+O	java:S106µ"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(íÿÜËüÿÿÿÿ
+R	java:S125¿"<This block of commented-out lines of code should be removed.(ğÖ˜
+?	java:S108À")Either remove or fill this block of code.(ı¦šÖ

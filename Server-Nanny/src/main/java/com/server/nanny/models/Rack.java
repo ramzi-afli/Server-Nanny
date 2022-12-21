@@ -4,6 +4,7 @@ package com.server.nanny.models;
 import javax.json.bind.annotation.JsonbVisibility;
 
 import com.server.nanny.util.FieldPropertyVisibilityStrategy;
+import jakarta.nosql.mapping.Column;
 import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;
 import java.util.Objects;
@@ -14,19 +15,31 @@ import java.util.Objects;
 public class Rack {
 
     @Id
-    private  Integer id ;
+    private  String id ;
+
+
+
+    @Column("room")
+    private  String roomId ;
 
     public Rack() {
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
+    public String getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(String roomId) {
+        this.roomId = roomId;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

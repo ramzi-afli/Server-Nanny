@@ -6,7 +6,9 @@ import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;
 
 import javax.json.bind.annotation.JsonbVisibility;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 
 @Entity
@@ -16,22 +18,39 @@ public class Sensor {
 
 
     @Id
-    private  Integer id ;
+    private  String id ;
 
-    @Column("position")
-    private  String  position ;
-
+    @Column("rack")
+    private  String rack ;
+    @Column("altitude")
+    private  double  altitude ;
+    @Column("longitude")
+    private  double longitude  ;
     @Column("sensor_type")
     private  SensorType type ;
+    @Column("value")
+    private Set<Double> values=new HashSet<>() ;
 
+
+    public Set<Double> getValues() {
+        return values;
+    }
+
+    public void setValues(Set<Double> values) {
+        this.values = values;
+    }
+
+    public Sensor(String id, String rack, SensorType type, Set<Double> values) {
+        this.id = id;
+        this.rack = rack;
+        this.type = type;
+        this.values = values;
+    }
 
     /**
      * ALL ARGS CONSTRUCTOR && NO ARGS CONSTRUCTOR
      */
-    public Sensor(String position, SensorType type) {
-        this.position = position;
-        this.type = type;
-    }
+
 
     public Sensor() {
     }
@@ -40,53 +59,76 @@ public class Sensor {
      *
      * ALl GETTERS
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public String getPosition() {
-        return position;
+
+    public String getRack() {
+        return rack;
     }
+
+    public void setRack(String rack) {
+        this.rack = rack;
+    }
+
+
 
     public SensorType getType() {
         return type;
     }
 
+    public double getAltitude() {
+        return altitude;
+    }
+
+    public void setAltitude(double altitude) {
+        this.altitude = altitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
 
     /**
      *
      * ALL SETTERS
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
+
 
     public void setType(SensorType type) {
         this.type = type;
     }
+
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Sensor sensor = (Sensor) o;
-        return id.equals(sensor.id) && position.equals(sensor.position) && type == sensor.type;
+        return Double.compare(sensor.altitude, altitude) == 0 && Double.compare(sensor.longitude, longitude) == 0 && Objects.equals(id, sensor.id) && type == sensor.type;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, position, type);
+        return Objects.hash(id, altitude, longitude, type);
     }
 
     @Override
     public String toString() {
-        return "{" +
-                "id=" + id +
-                ", position='" + position + '\'' +
+        return "Sensor{" +
+                "id='" + id + '\'' +
+                ", altitude=" + altitude +
+                ", longitude=" + longitude +
                 ", type=" + type +
                 '}';
     }

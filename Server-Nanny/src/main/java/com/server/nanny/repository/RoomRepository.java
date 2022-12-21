@@ -7,8 +7,9 @@ import jakarta.nosql.mapping.Repository;
 
 import java.util.Set;
 
-public interface RoomRepository extends Repository<Room,Integer> {
+public interface RoomRepository extends Repository<Room,String> {
 
 
     Set<Room> findAll()  ;
+    Set<Room> findByUserEmail(String email) ;
 }

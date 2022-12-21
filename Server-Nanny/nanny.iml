@@ -60,5 +60,8 @@
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-sync:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:bson:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:4.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.mail:jakarta.mail:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5" level="project" />
   </component>
 </module>
