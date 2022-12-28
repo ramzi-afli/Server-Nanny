@@ -7,6 +7,7 @@ com\server\nanny\models\User.class
 com\server\nanny\security\SecurityService.class
 com\server\nanny\exceptions\UserNotAuthorizedException.class
 com\server\nanny\filters\CORSFilter.class
+com\server\nanny\exceptions\SensorNotFoundException.class
 com\server\nanny\exceptions\RackNotFoundException.class
 com\server\nanny\security\UserToken.class
 com\server\nanny\boundaries\Oauth2Resources.class

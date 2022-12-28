@@ -134,5 +134,14 @@ public class UserServiceImpl  implements  UserService{
     public Set<Room> findAllRoom() {
         return  roomRepository.findAll()  ;
     }
+
+
+    @Override
+    public Sensor findSensorById(String sensorId) throws SensorNotFoundException {
+        if(!sensorRepository.findById(sensorId).isPresent()){
+            throw new SensorNotFoundException("there is no  sensor with such id "+sensorId);
+        }
+        return  sensorRepository.findById(sensorId).get();
+    }
 }
 

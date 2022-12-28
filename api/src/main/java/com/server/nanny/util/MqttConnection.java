@@ -20,8 +20,7 @@ import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.inject.Inject;
 import javax.net.ssl.SSLSocketFactory;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Singleton
 @Startup
@@ -146,16 +145,17 @@ public class MqttConnection {
                             sensor.setRack(message.toString().split("/")[0]);
                             sensor.setType(SensorType.valueOf(message.toString().split("/")[2]));
                             double value=Double.valueOf(message.toString().split("/")[3] ) ;
-                            Set<Double> values =new HashSet<>();
-                            values.add(value) ;
+                            List<Double> values =new ArrayList<>();
+                            values.add(0,value) ;
                             sensor.setValues(values);
                             sensorRepository.save(sensor);
                         }else {
                                 //else we  add a sensor value
-                             Sensor sensor=sensorRepository.findById(message.toString().split("/")[1]).get();
-                              var  sensorValues=sensor.getValues() ;
+                              Sensor sensor=sensorRepository.findById(message.toString().split("/")[1]).get();
+                              List<Double> sensorValues =new ArrayList<>();
+                              sensorValues=sensor.getValues() ;
                               double value=Double.valueOf(message.toString().split("/")[3] ) ;
-                              sensorValues.add(value);
+                              sensorValues.add(0,value);
                               sensor.setValues(sensorValues);
                               sensorRepository.save(sensor);
                         }

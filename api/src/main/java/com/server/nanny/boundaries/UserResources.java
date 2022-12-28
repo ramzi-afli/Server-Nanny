@@ -139,7 +139,7 @@ public class UserResources {
 
 
     @GET
-    @Path(("/user/sensor/{rackid}"))
+    @Path(("/user/rack/sensor/{rackid}"))
     @RolesAllowed({"ADMIN","USER"})
     public Response getSensorsValues(@PathParam(("rackid")) String rack ){
          try{
@@ -156,6 +156,20 @@ public class UserResources {
     public  Response getAllRooms(){
         return Response.ok(userService.findAllRoom()).build() ;
     }
+
+    @GET
+    @Path("/user/sensor/{id}")
+    @RolesAllowed({"ADMIN","USER"})
+
+    public  Response getSensor(@PathParam(("id")) String id  ){
+        try{
+            return  Response.ok(userService.findSensorById(id)).build();
+        }catch(SensorNotFoundException exception){
+            return  Response.status(400, exception.getMessage()).build();
+        }
+    }
+
+
 
 
 

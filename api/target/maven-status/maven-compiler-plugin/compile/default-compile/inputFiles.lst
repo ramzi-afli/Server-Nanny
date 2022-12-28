@@ -41,5 +41,6 @@ C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\excep
 C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\exceptions\UserNotAuthorizedToCreateAccountException.java
 C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\repository\UserTokenRepository.java
 C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\security\Oauth2Response.java
+C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\exceptions\SensorNotFoundException.java
 C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\exceptions\UserNotAuthorizedExceptionMapper.java
 C:\Users\pc\Desktop\kaanich-cot-project\api\src\main\java\com\server\nanny\repository\RackRepository.java

@@ -6,9 +6,7 @@ import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;
 
 import javax.json.bind.annotation.JsonbVisibility;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 
 @Entity
@@ -29,18 +27,18 @@ public class Sensor {
     @Column("sensor_type")
     private  SensorType type ;
     @Column("value")
-    private Set<Double> values=new HashSet<>() ;
+    private List<Double> values=new ArrayList<>() ;
 
 
-    public Set<Double> getValues() {
+    public List<Double> getValues() {
         return values;
     }
 
-    public void setValues(Set<Double> values) {
+    public void setValues( List<Double> values) {
         this.values = values;
     }
 
-    public Sensor(String id, String rack, SensorType type, Set<Double> values) {
+    public Sensor(String id, String rack, SensorType type, List<Double> values) {
         this.id = id;
         this.rack = rack;
         this.type = type;

@@ -1,9 +1,6 @@
 package com.server.nanny.services;
 
-import com.server.nanny.exceptions.RackNotFoundException;
-import com.server.nanny.exceptions.RoomNotFoundException;
-import com.server.nanny.exceptions.UserAlreadyExistsException;
-import com.server.nanny.exceptions.UserNotFoundException;
+import com.server.nanny.exceptions.*;
 import com.server.nanny.models.Rack;
 import com.server.nanny.models.Room;
 import com.server.nanny.models.Sensor;
@@ -24,4 +21,5 @@ public interface UserService {
 
     List<Sensor> findSensorsValuesByRackId(String rackId) throws RackNotFoundException;
     Set<Room> findAllRoom() ;
+    Sensor findSensorById(String sensorId) throws SensorNotFoundException;
 }
