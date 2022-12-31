@@ -14,7 +14,7 @@ class SensorValues{
 
 List<SensorValues> convertSensorValues(List<dynamic> data){
   List<SensorValues> normalizedList=[];
-  data=data.sublist(0,7);
+  data=data.sublist(0,15);
   SensorValues aux=new SensorValues(0,0);
   int i =0 ;
   data.forEach((element) {

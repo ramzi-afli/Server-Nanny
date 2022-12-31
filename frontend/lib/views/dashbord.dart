@@ -47,7 +47,7 @@ class _DashbordState extends State<Dashbord> {
     ResourceApi resourceApi=ResourceApi(authTokens.accessToken,authTokens.refreshToken);
     List rooms;
     return Scaffold(
-        backgroundColor: Colors.white70,
+        backgroundColor: Colors.white,
         bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Colors.blueGrey,
           index: 1,
@@ -80,8 +80,8 @@ class _DashbordState extends State<Dashbord> {
                                 ),
                               ) ,
                               Padding(
-                                padding: EdgeInsets.fromLTRB(80.0,50,0,0),
-                                child: Text("Schedule" ,style: TextStyle(color:Colors.white , fontSize: 30),),
+                                padding: EdgeInsets.fromLTRB(50.0,40,0,0),
+                                child: Text("Dashboard " ,style: TextStyle(color:Colors.white , fontSize: 30),),
                               )
                             ],
                           ) ,

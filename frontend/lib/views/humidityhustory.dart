@@ -70,7 +70,7 @@ class _HumidityHistoryState extends State<HumidityHistory> {
                           series: <ChartSeries>[
                             LineSeries<SensorValues, double>(
                                 name: 'Humidity',
-                                dataSource: convertSensorValues(snapshot.data[0]['values']),
+                                dataSource: convertSensorValues(snapshot.data[1]['values']),
                                 xValueMapper: (SensorValues mesure, _) => mesure.value,
                                 yValueMapper: (SensorValues mesure, _) => mesure.time,
                                 dataLabelSettings: const DataLabelSettings(isVisible: true),

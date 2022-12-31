@@ -76,6 +76,7 @@ public class MqttConnection {
             MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
             mqttConnectOptions.setUserName(username);
             mqttConnectOptions.setPassword(password.toCharArray());
+            mqttConnectOptions.setConnectionTimeout(0);
             mqttConnectOptions.setSocketFactory(SSLSocketFactory.getDefault()); // using the default socket factory
             client.connect(mqttConnectOptions);
             client.setCallback(new MqttCallback() {
