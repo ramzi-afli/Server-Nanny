@@ -32,9 +32,9 @@ class Home extends StatelessWidget {
         routes: {
           '/':(ctx)=>  const WelcomeScreen() ,
           '/Login':(ctx)=> const Login(),
-          '/Sing':(ctx)=> const Singin(),
+          '/Sign':(ctx)=> const Singin(),
            '/dashboard':(ctx)=>  const Dashbord() ,
-           '/monitore':(ctx)=>  Monotoring() ,
+           '/monitore':(ctx)=>  const Monotoring() ,
            '/tmp_history':(ctx)=> const TemperatureHistory() ,
            '/hum_history':(ctx)=> const HumidityHistory() ,
 

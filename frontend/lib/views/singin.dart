@@ -109,12 +109,10 @@ class _SinginState extends State<Singin> {
                                     color:Colors.blueGrey, borderRadius: BorderRadius.circular(20)),
                                 child: TextButton(
                                   onPressed: () {
-                                    if(password.isEmpty || confirmPassword.isEmpty ||password.isEmpty ) {
-                                      //
+                                    if(password.isEmpty || confirmPassword.isEmpty ||password!=confirmPassword ) {
                                       showDialog<void>(
                                         context: context,
                                         barrierDismissible: false,
-                                        // user must tap button!
                                         builder: (BuildContext context) {
                                           return AlertDialog(
                                             title: const Text(

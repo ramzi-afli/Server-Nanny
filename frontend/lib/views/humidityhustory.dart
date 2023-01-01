@@ -33,15 +33,16 @@ class _HumidityHistoryState extends State<HumidityHistory> {
   Widget build(BuildContext context) {
     _tooltipBehavior = TooltipBehavior(enable: true);
     final arg = ModalRoute.of(context)!.settings.arguments as Map   ;
-    AuthTokens authTokens=new AuthTokens(arg['accessToken'], arg['refreshToken']);
+    AuthTokens authTokens= AuthTokens(arg['accessToken'], arg['refreshToken']);
     ResourceApi resourceApi=ResourceApi(authTokens.accessToken,authTokens.refreshToken);
 
     return SafeArea(
         child: Scaffold(
             backgroundColor: Colors.white,
             bottomNavigationBar: CurvedNavigationBar(
-              backgroundColor: Colors.blueGrey,
+              backgroundColor: Colors.white12,
               index: 1,
+
               items: const <Widget>[
                 Icon(Icons.navigate_before, size: 30),
                 Icon(Icons.home, size: 30),
@@ -51,6 +52,13 @@ class _HumidityHistoryState extends State<HumidityHistory> {
                 if (index == 0) {
                   Navigator.pop(context);
                 } //Handle button tap
+
+                if(index==1){
+                  Navigator.pushNamed(context,'/dashboard',    arguments: {"accessToken":authTokens.accessToken,
+                    "refreshToken":authTokens.refreshToken
+                  },
+                  );
+                }
               },
             ),
             body: FutureBuilder(

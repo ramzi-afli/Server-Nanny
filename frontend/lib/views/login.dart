@@ -89,7 +89,7 @@ class _LoginState extends State<Login> {
 
                                   TextButton(
                                     onPressed: () {
-                                      Navigator.pushNamed(context, '/Sing');
+                                      Navigator.pushNamed(context, '/Sign');
                                     },
                                     child:const Text(
                                       'create account',
@@ -113,6 +113,7 @@ class _LoginState extends State<Login> {
                                     print(email) ;
                                     print(password);
                                     _authAPI.login(email, password).then((value){
+                                      print(value);
                                       if(value.statusCode==200){
                                         var data =jsonDecode(value.body) ;
                                         AuthTokens authtoken=new AuthTokens(data['accessToken'], data['refreshToken'])  ;
