@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 
 
 class Room {
@@ -22,6 +23,15 @@ List<SensorValues> convertSensorValues(List<dynamic> data){
     i++;
   });
   return normalizedList ;
+
+
+}
+
+play() async {
+  AudioPlayer audioPlugin = AudioPlayer();
+  audioPlugin.play(AssetSource("alert.mp3"));
+
+
 
 
 }
