@@ -20,7 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Container(
       margin: const EdgeInsets.fromLTRB(0,80,0,0),
       child: Image.asset(
-        "images/logo.png",
+        "images/logo.jpg",
         fit: BoxFit.contain,
         height: double.infinity,
         width: double.infinity,
@@ -63,9 +63,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       ),
       pages: [
         PageViewModel(
-          title: 'Context Golobal ',
+          title: '\n Leave your servers in great hands !',
           body:
-          'Votre Application permet aux gens de gérer leur programme de médicaments d\'une manière simple et facile',
+          'You may never need people to come in and out your data centers anymore ! We provide you with an application to monitor your servers from afar and check their well being in real-time.',
           image: _buildFullScreenImage("logo.jpg"),
           decoration: pageDecoration.copyWith(
             contentMargin: const EdgeInsets.symmetric(horizontal: 16),
@@ -76,9 +76,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         ),
 
         PageViewModel(
-          title: "soyez libre",
+        title:" Leave your servers in great hands !" ,
           body:
-          "en utilisant cette application, vous serez libre en fait, vous n'avez pas à vous soucier de votre programme de médicaments ou de vos Fratrie aussi",
+          "Temperature too high or dead freezing ? we will instantly alert you. Maybe the air is too sticky ? we'll never miss to send an alarm.",
           image: _buildFullScreenImage("family1.jpg"),
           decoration: pageDecoration.copyWith(
             contentMargin: const EdgeInsets.symmetric(horizontal: 16),
@@ -89,11 +89,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         ),
 
         PageViewModel(
-          title: "économisez votre temps",
+          title: " Leave your servers in great hands !",
           body:
-          "ne perdez pas de temps maintenant quand vous devez tout organiser            "
-              " Le premier bien est la santé, le deuxième la beauté, le troisième la richesse",
-
+          "Rest assured that nothing is going to catch on fire as we will instantly alert you if cameras detect smoke or a start of a fire.",
           image: _buildFullScreenImage("docotr.jpg"),
           decoration: pageDecoration.copyWith(
             contentMargin: const EdgeInsets.symmetric(horizontal: 16),

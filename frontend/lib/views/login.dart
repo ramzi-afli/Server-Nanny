@@ -39,15 +39,15 @@ class _LoginState extends State<Login> {
                   color: Colors.white,
                 ),
                 Positioned(
-                  top: 15,
-                  left: 40,
-                  right: 40,
+                  top: 10,
+                  left: 20,
+                  right: 20,
                   child: Container(
-                    height: height/3,
+                    height: height/2.2,
                     width: width/2,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("images/logo.png"),
+                          image: AssetImage("images/ll.jpg"),
                           fit: BoxFit.fill,
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(120)
@@ -56,7 +56,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 Positioned(
-                    top: 250,
+                    top: 370,
 
                     child: Container(
                       height: height / 1.5,
@@ -133,7 +133,6 @@ class _LoginState extends State<Login> {
                                           builder: (BuildContext context) {
 
 
-                                            play();
                                             return AlertDialog(
                                               title: const Text(
                                                   'Error Accursed'),

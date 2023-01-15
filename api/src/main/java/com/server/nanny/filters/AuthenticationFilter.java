@@ -27,6 +27,7 @@ import java.util.regex.Pattern;
 @Provider
 @Priority(Priorities.AUTHENTICATION)
 @Secured
+
 public class AuthenticationFilter implements HttpAuthenticationMechanism {
     private static final Pattern CHALLENGE_PATTERN = Pattern.compile("^Bearer *([^ ]+) *$", Pattern.CASE_INSENSITIVE);
     private  static  final  List NOT_SECURED_PREFIX=List.of("oauth2","signup") ;
@@ -64,7 +65,6 @@ public class AuthenticationFilter implements HttpAuthenticationMechanism {
             System.out.println("---------------------------------------------------------------------");
             System.out.println(accessToken.getJwtSecret());
             final Optional<UserJWT> optionalUserJWT = UserJWT.parse(accessToken.getToken(), accessToken.getJwtSecret());
-
             if (optionalUserJWT.isPresent()) {
                 final UserJWT userJWT = optionalUserJWT.get();
                 return httpMessageContext.notifyContainerAboutLogin(userJWT.getUser(), userJWT.getRoles());

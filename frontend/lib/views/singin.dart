@@ -39,11 +39,11 @@ class _SinginState extends State<Singin> {
                   left: 40,
                   right: 40,
                   child: Container(
-                    height: height/3,
+                    height: height/2.3,
                     width: width/2,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("images/logo.png"),
+                          image: AssetImage("images/ll.jpg"),
                           fit: BoxFit.fill,
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(120)
@@ -54,9 +54,9 @@ class _SinginState extends State<Singin> {
                 Positioned(
                   left: 10,
                   right: 10,
-                  top: 210,
+                  top: 330,
                   child: Container(
-                    height: height/1.2,
+                    height: height/1.3,
                     width: width/2,
                     decoration: const BoxDecoration(
                         color: Colors.white,
@@ -67,14 +67,14 @@ class _SinginState extends State<Singin> {
                       child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 60, 20, 0),
+                              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                               child: TextField(
                                   decoration: buildInputDecoration(Icons.account_circle ,"Full  Name"),
                                   onChanged:(val) =>setState(() => username = val) ,
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
+                              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                               child: TextField(
                                   decoration: buildInputDecoration( Icons.email ,"Email"),
                                   onChanged:(val) =>setState(() => email = val) ,
@@ -82,7 +82,7 @@ class _SinginState extends State<Singin> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
+                              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                               child: TextField(
                                   decoration:  buildInputDecoration(Icons.password,"Password"),
                                   onChanged:(val) =>setState(() => password = val) ,
@@ -90,7 +90,7 @@ class _SinginState extends State<Singin> {
                               ),
                             ),
                             Padding(
-                              padding:  const EdgeInsets.fromLTRB(20, 40, 20, 0),
+                              padding:  const EdgeInsets.fromLTRB(20, 20, 20, 0),
                               child: TextField(
                                   obscureText: true,
                                   decoration: buildInputDecoration(Icons.password," Confirm Password"),
