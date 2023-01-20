@@ -10,57 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ade42d2-f785-4a04-b31c-0794ba203bfe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f723a3eddf3ddcdbfc675386b8d9bba3c72f0a1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11a94d4cf25f096637aa9c44543a5c4ee901d278" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/1337d72a3b1928dba82aa5210f5cdc0e88ce895b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14a394ade692a1eb063c53f587796549cd9a7f17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1713b65f1eb1e2ad1e765f3eaa53d049e6115bd3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1762e0624e1ec793b78b485643336542a0c8002f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c5b9fe0e102ad9e138b990116d1a2ad2142ef27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42f28db418c1a850f359708b888c64e1eaa7489e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/498e94fbda31657e7225add227bea0ae08a9ee03" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d37a3f8dceb557a156d59b9e580bee314fc5cda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f0d57990b66d9ae46b547d69781c7aa97c30880" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52a904c5cdaca612206034fcf95cdace486eeeca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54453ea17ffe77f2fb719b7807c2464d0eb1c138" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57ef1f40a9e3afa992e3975eef1715a5c9c6d3c3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/688b18906dcb6fa99bf4d09fbf39ab40b35ef767" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e24bee9a3a3b23ba366d292ff62de80524dde0d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f9c41422c7869a4d157195323c5cc460b8a0e9b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9db5ba3727043702a31407c552699d4fae2a02cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ebd0462b430acc8f0ffa5b306c22624083e78f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a42ced131912546b5de9cb3ab8bb2fff4d2c752c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4938ca8180553f9fb575712ce114302eddc3af2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b968e38003796cb53d790eda183f9440e1f6d19f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c11274194a9c5b48b9dd7a1542c420cfc39c0b78" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1779064c2fdd615d9a84b1948401394625df255" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9cb071e8b304a90e047724bba1772e5bf2ab9f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e87526bcb89adde0ddc63516d6fb70a147f5b9b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/eb2e6d88c5a6a27cbcf38fc476efee5cc4475bba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f09734624a0e9667c4270e0e65f18f4411dda1e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcbf73a40d21e328f2091332e53f26a7596393aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff68be94e7ea18c1f17676af6a5be87fb4286dc3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/filters/AuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/SensorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/models/SensorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/security/SecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/server/nanny/util/MqttConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/server/nanny/util/MqttConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/nanny-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/nanny-1.0/WEB-INF/classes/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/lib/modles/room.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/modles/room.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/lib/views/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/views/login.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/lib/views/monitoring.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/views/monitoring.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/lib/views/temprature_history.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/lib/views/temprature_history.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +191,7 @@
       <workItem from="1674152187765" duration="4975000" />
       <workItem from="1674205053535" duration="8098000" />
       <workItem from="1674219461109" duration="2335000" />
-      <workItem from="1674225537397" duration="9012000" />
+      <workItem from="1674225537397" duration="10345000" />
     </task>
     <servers />
   </component>

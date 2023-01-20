@@ -1,0 +1,30 @@
+
+•
+java:S1192@"xDefine a constant instead of duplicating this literal "
+ --------------------------------------------------- 
+" 4 times.(À‚Ô¤8Ä‰°‚Ý0
+c
+java:S2095H"HUse try-with-resources or close this "MqttClient" in a "finally" clause.(ÅÎ× ÿÿÿÿÿ
+S
+java:S3655Š"7Call "Optional#isPresent()" before accessing the value.(Èòì€ùÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(üõÙŠüÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+Ÿ
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£Óˆõ8´§®‚Ý0
+N	java:S106^"9Replace this use of System.out or System.err by a logger.(À‚Ô¤
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.( ‚ùùÿÿÿÿ8í‰°‚Ý0
+U	java:S106`"9Replace this use of System.out or System.err by a logger.(À‚Ô¤8î‰°‚Ý0
+\
+java:S1854‹"@Remove this useless assignment to local variable "sensorValues".(¶ÊÁúÿÿÿÿ
+M
+java:S3972v"7Move this "if" to a new line or add the missing "else".(äµ¡•
+M
+java:S3972x"7Move this "if" to a new line or add the missing "else".(û­á£
+M
+java:S3972}"7Move this "if" to a new line or add the missing "else".(âªß
+U
+java:S2130ƒ">Use "Double.parseDouble" for this string-to-double conversion.(Ï«§¦
+U
+java:S2130">Use "Double.parseDouble" for this string-to-double conversion.(Ï«§¦
+?	java:S108­")Either remove or fill this block of code.(ý¦šÖ

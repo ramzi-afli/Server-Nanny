@@ -60,7 +60,7 @@ class _MonotoringState extends State<Monotoring> {
 
             builder: (context, snapshot){
                  if(snapshot.hasData) {
-                   if(snapshot.data[1]['values'][0]<70 && snapshot.data[0]['values'][0]<23){
+                   if(snapshot.data[1]['values'][0]<70 && snapshot.data[0]['values'][0]<25){
                      return Center(
                        child: Padding(
                          padding: const EdgeInsets.fromLTRB(0, 50, 0, 30),

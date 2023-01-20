@@ -1,0 +1,7 @@
+
+s
+java:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ÚáÈü8Âç€€İ0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(’¤™ì
+i
+java:S2175!"MA "Hashtable<String, Session>" cannot contain a "Session" in a "String" type.(³à±F8íæ€İ0
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(ƒşÈ¹8şæ€İ0
