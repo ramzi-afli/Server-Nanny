@@ -14,15 +14,16 @@ class SensorValues{
 }
 
 List<SensorValues> convertSensorValues(List<dynamic> data){
-  List<SensorValues> normalizedList=[];
+  List<SensorValues> normalizedList=[] ;
   data=data.sublist(0,15);
-  SensorValues aux=new SensorValues(0,0);
+  SensorValues aux= SensorValues(0,0);
   int i =0 ;
   data.forEach((element) {
     normalizedList.add(SensorValues(1.0*data.indexOf(element),element));
     i++;
   });
-  return normalizedList ;
+
+  return normalizedList.reversed.toList()  ;
 
 
 }

@@ -60,7 +60,7 @@ class _MonotoringState extends State<Monotoring> {
 
             builder: (context, snapshot){
                  if(snapshot.hasData) {
-                   if(snapshot.data[1]['values'][0]<90 && snapshot.data[0]['values'][0]<10){
+                   if(snapshot.data[1]['values'][0]<70 && snapshot.data[0]['values'][0]<23){
                      return Center(
                        child: Padding(
                          padding: const EdgeInsets.fromLTRB(0, 50, 0, 30),
@@ -89,7 +89,7 @@ class _MonotoringState extends State<Monotoring> {
                                        ticksPosition: ElementsPosition.outside,
                                        labelsPosition: ElementsPosition.outside,
                                        minorTicksPerInterval: 5,
-                                       axisLineStyle: AxisLineStyle(
+                                       axisLineStyle: const AxisLineStyle(
                                          thicknessUnit: GaugeSizeUnit.factor,
                                          thickness: 0.1,
                                        ),

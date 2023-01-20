@@ -44,6 +44,8 @@ dependencies:
   syncfusion_flutter_gauges: ^20.4.38
   syncfusion_flutter_charts: ^20.4.38
   audioplayers: ^1.2.0
+  web_socket_channel: ^2.2.0
+
 
 dev_dependencies:
   flutter_test:

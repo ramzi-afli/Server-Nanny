@@ -39,31 +39,25 @@ public class AuthenticationFilter implements HttpAuthenticationMechanism {
     public AuthenticationStatus validateRequest(HttpServletRequest request, HttpServletResponse response,
                                                 HttpMessageContext httpMessageContext) {
 
-        System.out.println(request.getRequestURI());
-        if(!(request.getRequestURI().contains("oauth2") || request.getRequestURI().contains("signup"))  ) {
+        if(!(request.getRequestURI().contains("oauth2") || request.getRequestURI().contains("signup")||request.getRequestURI().contains("fire"))  ) {
             final String authorization = request.getHeader("Authorization");
-
-            System.out.println("ta3ada  rahow");
             Matcher matcher = CHALLENGE_PATTERN.matcher(Optional.ofNullable(authorization).orElse(""));
             if (!matcher.matches()) {
-               System.out.println(matcher);
                 return httpMessageContext.responseUnauthorized();
             }
+
             final String token = matcher.group(1);
-            System.out.println(token);
             final Optional<AccessToken> optional = repository.findByAccessToken(token)
                     .flatMap(u -> u.findAccessToken(token));
 
 
+
             if (!optional.isPresent()) {
-                System.out.println("-----------------------is not present-----------------");
                 return httpMessageContext.responseUnauthorized();
             }
-            System.out.println("-----------------------ispresent-----------------");
+
 
             final AccessToken accessToken = optional.get();
-            System.out.println("---------------------------------------------------------------------");
-            System.out.println(accessToken.getJwtSecret());
             final Optional<UserJWT> optionalUserJWT = UserJWT.parse(accessToken.getToken(), accessToken.getJwtSecret());
             if (optionalUserJWT.isPresent()) {
                 final UserJWT userJWT = optionalUserJWT.get();

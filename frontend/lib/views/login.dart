@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
                   color: Colors.white,
                 ),
                 Positioned(
-                  top: 10,
+                  top: 30,
                   left: 20,
                   right: 20,
                   child: Container(
@@ -57,7 +57,6 @@ class _LoginState extends State<Login> {
                 ),
                 Positioned(
                     top: 370,
-
                     child: Container(
                       height: height / 1.5,
                       width: width,
@@ -88,7 +87,6 @@ class _LoginState extends State<Login> {
                                   const Text('if you dont have account try  to',
                                     style: TextStyle(fontSize: 15,color: Colors.black
                                     ),),
-
                                   TextButton(
                                     onPressed: () {
                                       Navigator.pushNamed(context, '/Sign');
@@ -124,15 +122,12 @@ class _LoginState extends State<Login> {
                                         "refreshToken":data['refreshToken']
                                         },
                                         );
-
                                       }else{
                                         showDialog<void>(
                                           context: context,
                                           barrierDismissible: false,
                                           // user must tap button!
                                           builder: (BuildContext context) {
-
-
                                             return AlertDialog(
                                               title: const Text(
                                                   'Error Accursed'),

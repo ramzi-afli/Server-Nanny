@@ -62,12 +62,7 @@ public class AuthorizationFilter implements ContainerRequestFilter {
         // Authorization is not required for non-annotated methods
     }
 
-    /**
-     * Perform authorization based on roles.
-     *
-     * @param rolesAllowed the allowed roles
-     * @param requestContext the request context
-     */
+
     private void performAuthorization(String[] rolesAllowed,
                                       ContainerRequestContext requestContext) {
 

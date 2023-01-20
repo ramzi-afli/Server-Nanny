@@ -22,6 +22,8 @@ import javax.inject.Inject;
 import javax.net.ssl.SSLSocketFactory;
 import java.util.*;
 
+import static com.server.nanny.util.PublishWebsocketEndpoint.broadcastMessage;
+
 @Singleton
 @Startup
 public class MqttConnection {
@@ -60,7 +62,6 @@ public class MqttConnection {
     public void start() {
         try {
             System.out.println("\n --------------------------------------------------- \n");
-
             System.out.println("MQTT HAS BEEN STARTED");
             System.out.println("\n --------------------------------------------------- \n");
 
@@ -83,7 +84,7 @@ public class MqttConnection {
 
 
 
-            ///
+                ///
 
 
 
@@ -108,38 +109,20 @@ public class MqttConnection {
 
                 @Override
                 public void messageArrived(String topic, MqttMessage message) {
-                    System.out.println("We are under message Arrived ");
-                    System.out.println("\n-----------------------------------------------\n");
-                    System.out.println(topic);
-                    System.out.println("\n-----------------------------------------------\n");
-                  //  System.out.println(message);
-                    System.out.println("\n-----------------------------------------------\n");
-                    //Todo : we  implement all the  logic  of saving the data  inside  the db and notifying users
+
                     if(topic.equals("room")){
-                        System.out.println("room :"+ message+" is successfully added");
                         Room room =new Room() ;
                         room.setId(message.toString());
                         room.setUserEmail(" ");
                         roomRepository.save(room);
-
-
-
+                    }if(topic.equals("/")){
+                        broadcastMessage(message.toString());
                     }if(topic.equals("room/rack")){
-                        System.out.println("rack : " +message + "is successfully added");
                         Rack rack=new Rack() ;
-                        //message  format  : room1/rack1
                         rack.setId(message.toString().split("/")[1]);
                         rack.setRoomId(message.toString().split("/")[0]);
                         rackRepository.save(rack);
                     }if(topic.equals("room/rack/sensor")){
-                       //"rackid/sensorid/sensortype/value"
-                        System.out.println(message.toString().split("/")[0]);//rackId
-                        System.out.println(message.toString().split("/")[1]);//sensorId
-                        System.out.println(message.toString().split("/")[2]);//SensorType
-                        System.out.println(message.toString().split("/")[3]);//value
-                      //  room/rack/sensor
-                        //        message :  //"rackid/sensorid/sensortype/value"
-                        //if the sensor not  saved  we  have to  save  it
                         if(!sensorRepository.findById(message.toString().split("/")[1]).isPresent()){
                             Sensor sensor=new Sensor() ;
                             sensor.setId(message.toString().split("/")[1]);
@@ -151,14 +134,14 @@ public class MqttConnection {
                             sensor.setValues(values);
                             sensorRepository.save(sensor);
                         }else {
-                                //else we  add a sensor value
-                              Sensor sensor=sensorRepository.findById(message.toString().split("/")[1]).get();
-                              List<Double> sensorValues =new ArrayList<>();
-                              sensorValues=sensor.getValues() ;
-                              double value=Double.valueOf(message.toString().split("/")[3] ) ;
-                              sensorValues.add(0,value);
-                              sensor.setValues(sensorValues);
-                              sensorRepository.save(sensor);
+                            //else we  add a sensor value
+                            Sensor sensor=sensorRepository.findById(message.toString().split("/")[1]).get();
+                            List<Double> sensorValues =new ArrayList<>();
+                            sensorValues=sensor.getValues() ;
+                            double value=Double.valueOf(message.toString().split("/")[3] ) ;
+                            sensorValues.add(0,value);
+                            sensor.setValues(sensorValues);
+                            sensorRepository.save(sensor);
                         }
 
 
@@ -179,8 +162,6 @@ public class MqttConnection {
                  */
                 @Override
                 public void deliveryComplete(IMqttDeliveryToken token) {
-                    System.out.println("\n --------------------------------------------------- \n");
-                    System.out.println("delivery complete " + token);
                 }
             });
 
@@ -189,10 +170,8 @@ public class MqttConnection {
             client.subscribe("room/rack", 1);
             client.subscribe("room/rack/sensor", 1);
 
-            // client.subscribe("verification", 1);
         } catch (MqttException e) {
 
         }
     }
 }
-

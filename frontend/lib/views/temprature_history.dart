@@ -33,7 +33,7 @@ class _TemperatureHistoryState extends State<TemperatureHistory> {
   Widget build(BuildContext context) {
     _tooltipBehavior = TooltipBehavior(enable: true);
     final arg = ModalRoute.of(context)!.settings.arguments as Map   ;
-    AuthTokens authTokens=new AuthTokens(arg['accessToken'], arg['refreshToken']);
+    AuthTokens authTokens= AuthTokens(arg['accessToken'], arg['refreshToken']);
     ResourceApi resourceApi=ResourceApi(authTokens.accessToken,authTokens.refreshToken);
 
     return SafeArea(
@@ -58,7 +58,6 @@ class _TemperatureHistoryState extends State<TemperatureHistory> {
 
                 builder:  (context, snapshot  ){
                   return snapshot.hasData ?
-
                    Column(
                     children: [
                       Expanded(
@@ -76,9 +75,11 @@ class _TemperatureHistoryState extends State<TemperatureHistory> {
                                 dataLabelSettings: const DataLabelSettings(isVisible: true),
                                 enableTooltip: true)
                           ],
+
                           primaryXAxis: NumericAxis(
                             edgeLabelPlacement: EdgeLabelPlacement.shift,
                           ),
+
                           primaryYAxis: NumericAxis(
                             labelFormat: '{value}°C',
                           ),
@@ -95,11 +96,15 @@ class _TemperatureHistoryState extends State<TemperatureHistory> {
     );
   }
 
+
+
+
   setUpTimedFetch() {
     Timer.periodic(const Duration(milliseconds: 5000), (timer) {
       setState(() {});
     });
   }
+
 
 
 
@@ -119,11 +124,8 @@ class _TemperatureHistoryState extends State<TemperatureHistory> {
       SensorValues(55, 10),
       SensorValues(60, 10),
       SensorValues(65, 10),
-
-
-
-
     ];
+
     return chartData;
   }
 }

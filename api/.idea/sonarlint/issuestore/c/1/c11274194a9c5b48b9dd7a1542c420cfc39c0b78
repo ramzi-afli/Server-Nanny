@@ -1,22 +1,0 @@
-
-w
-java:S1488k"\Immediately return this expression instead of assigning it to the temporary variable "user".(¤…à¤şÿÿÿÿ
-V
-java:S1172}";Remove these unused method parameters "email", "principal".(‹Œìíúÿÿÿÿ
-h
-java:S1612…"LReplace this lambda with method reference 'UserNotAuthorizedException::new'.(»æ¯ıÿÿÿÿ
-O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(ù€•
-O	java:S106"9Replace this use of System.out or System.err by a logger.(•Ñşƒ
-h
-java:S1612"LReplace this lambda with method reference 'UserNotAuthorizedException::new'.(»æ¯ıÿÿÿÿ
-T	java:S106"9Replace this use of System.out or System.err by a logger.(òÌŠùÿÿÿÿÿ
-Q
-java:S2209"5Change this instance-reference to a static reference.(òÌŠùÿÿÿÿÿ
-L
-java:S2209‘"5Change this instance-reference to a static reference.(å¿Ê¸
-g
-java:S1128"LRemove this unused import 'com.server.nanny.repository.UserTokenRepository'.(Œ½®äÿÿÿÿÿ
-V
-java:S1128";Remove this unused import 'jakarta.nosql.mapping.Database'.(‹ï®Äùÿÿÿÿ
-U
-java:S1128"?Remove this unused import 'jakarta.nosql.mapping.DatabaseType'.(˜ùšã

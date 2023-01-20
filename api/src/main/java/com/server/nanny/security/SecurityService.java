@@ -137,11 +137,8 @@ public class SecurityService {
 
 
     public User findBy(String email, String password) {
-        System.out.println("------------------------------------------------");
-        System.out.println(userRepository.findById(email).toString());
         final User user = userRepository.findById(email)
                 .orElseThrow(() -> new UserNotAuthorizedException());
-        System.out.println(argon2Utility.check(user.getPassword() ,password.toCharArray()));
         if (argon2Utility.check(user.getPassword() ,password.toCharArray() )) {
 
             return user;
